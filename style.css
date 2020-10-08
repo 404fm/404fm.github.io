@@ -32,17 +32,19 @@ html, body {
     top: 0;
     width: 100%;
     overflow: hidden;
-    height: 4rem;
+    height: 15rem;
     background-color: transparent;
     padding-left: 100%;
+    margin-left: 17%;
   }
   
   .ticker {
     display: inline-block;
-    height: 4rem;
-    line-height: 4rem;
+    height: 15rem;
+    line-height: 11rem;
     white-space: nowrap;
     padding-right: 100%;
+
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
@@ -134,7 +136,6 @@ html, body {
              
              .footer {
                 position: fixed;
-                left: 0;
                 bottom: 0;
                 width: 100%;
                 background-color: transparent;
