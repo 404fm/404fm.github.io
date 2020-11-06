@@ -3,29 +3,42 @@ html{
     background-color: #2A9D8F;
     cursor: url(cursor.png), auto;
     padding: 0;
+
 }
 
 body {
-  height: 100vh !important;
-  min-height: 100vh !important;
+  height: 100vh;
+  min-height: 100vh;
   /* background-color:black; */
   display: table;
-  padding: 0;
-  margin-bottom: 2vh;
+  /* padding: 0;
+  margin-bottom: 0px; */
   margin-top: 2vh;
+  margin-bottom: 0; 
+  padding: 0;
   overflow: hidden;
 }
 
 body > footer {
   display: table-row;
 }
-.column {
+.column1 {
   float: left;
-  width: 50%;
+  width: 30%;
+}
+
+.column2 {
+  float: left;
+  width: 70%;
 }
 
 @media screen and (max-width: 600px) {
-  .column {
+  .column1 {
+    width: 100%;
+/*      margin-left: 2.5%;
+    margin-right: 2.5%;*/
+  }
+  .column2 {
     width: 100%;
 /*      margin-left: 2.5%;
     margin-right: 2.5%;*/
@@ -39,6 +52,9 @@ body > footer {
   img.logo{
     width: 30% !important;
   }
+  img.poster{
+    width: 100% !important;
+  }
   .ticker-wrap {
     margin-left: 30% !important;
   }
@@ -48,13 +64,16 @@ body > footer {
   a {
     font-size: 5vw !important;
   }
+  iframe {
+    width: 100% !important;
+  }
 
 }
 .center {
   margin: auto;
   width: 100%;
-  margin-top: 6vh;
-  margin-bottom: 6vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
   /* border: 3px solid #73AD21;
   padding: 10px; */
 }
@@ -107,8 +126,8 @@ body > footer {
   
   .ticker {
     display: inline-block;
-    height: 15rem;
-    line-height: 11rem;
+    height: 10rem;
+    line-height: 15rem;
     white-space: nowrap;
     padding-right: 100%;
 
@@ -153,7 +172,7 @@ body > footer {
     font-family: 'Epilogue', sans-serif;
     cursor: pointer;
   }
-  img:hover {
+  img.logo:hover {
               animation: shake 0.5s infinite;
           }
           
