@@ -1,13 +1,54 @@
-html, body {
-    height: 100%;
+html{
+    height: 100vh;
     background-color: #2A9D8F;
-    overflow: hidden;
     cursor: url(cursor.png), auto;
+    padding: 0;
 }
 
+body {
+  height: 100vh !important;
+  min-height: 100vh !important;
+  /* background-color:black; */
+  display: table;
+  padding: 0;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  overflow: hidden;
+}
+
+body > footer {
+  display: table-row;
+}
 .column {
   float: left;
   width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+/*      margin-left: 2.5%;
+    margin-right: 2.5%;*/
+  }
+  .ticker {
+    line-height: 8rem !important;
+  }
+  .ticker_item {
+    font-size: 8vw !important;
+  }
+  img.logo{
+    width: 30% !important;
+  }
+  .ticker-wrap {
+    margin-left: 30% !important;
+  }
+  p {
+    font-size: 4vw !important;
+  }
+  a {
+    font-size: 5vw !important;
+  }
+
 }
 .center {
   margin: auto;
@@ -161,9 +202,10 @@ html, body {
              }
              
              .footer {
-                position: fixed;
-                bottom: 0;
+                position: relative;
                 width: 100%;
+                margin-bottom: 0px;
+                bottom: 0px;
                 background-color: transparent;
                 border: #264653;
                 /* border-top: 3px solid #e76f51; */
